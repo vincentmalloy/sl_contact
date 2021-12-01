@@ -18,6 +18,12 @@
 			<trans-unit id="tx_slcontact_domain_model_contactrequest.consent_given" resname="tx_slcontact_domain_model_contactrequest.consent_given">
 				<source>Consent Given</source>
 			</trans-unit>
+			<trans-unit id="tx_sl_contact_pi1.name" resname="tx_sl_contact_pi1.name">
+				<source>Contact Form</source>
+			</trans-unit>
+			<trans-unit id="tx_sl_contact_pi1.description" resname="tx_sl_contact_pi1.description">
+				<source>Adds a Contact form with email capability</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
