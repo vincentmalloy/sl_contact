@@ -33,4 +33,7 @@ defined('TYPO3') || die();
             }
        }'
     );
+
+    // add email template paths
+    $GLOBALS['TYPO3_CONF_VARS']['MAIL']['templateRootPaths'][700] = 'EXT:sl_contact/Resources/Private/Templates/Email';
 })();
