@@ -6,6 +6,9 @@ namespace SimonLundius\SlContact\Controller;
 
 use SimonLundius\SlContact\Domain\Model\ContactRequest;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use Symfony\Component\Mime\Address;
+use TYPO3\CMS\Core\Mail\FluidEmail;
+use TYPO3\CMS\Core\Mail\Mailer;
 
 /**
  * This file is part of the "Contact Form" Extension for TYPO3 CMS.
@@ -54,7 +57,15 @@ class ContactRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
      */
     public function sendEmail(ContactRequest $contactRequest)
     {
-        //TODO: implement email
+        $email = GeneralUtility::makeInstance(FluidEmail::class);
+        $email
+            ->to('cyperfection@acme.com')
+            ->from(new Address($contactRequest->getEmail(), $contactRequest->getName()))
+            ->subject('New Contact Request')
+            ->format('both') // send HTML and plaintext mail
+            ->setTemplate('contactRequest')
+            ->assign('contactRequest', $contactRequest);
+        GeneralUtility::makeInstance(Mailer::class)->send($email);
         return;
     }
 }
