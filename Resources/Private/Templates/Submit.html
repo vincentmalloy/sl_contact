@@ -1,6 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-    <h1>Success</h1>
-    <p>your submitted message:</p>
-    <h3>{contactRequest.name} - {contactRequest.email}</h3>
-    <p>{contactRequest.message}</p>
+    <f:layout name="Default"/>
+    
+    <f:section name="header">
+        <h1>Success</h1>
+    </f:section>
+    
+    <f:section name="form">
+        <p>your submitted message:</p>
+        <p>{contactRequest.name} - {contactRequest.email}:</p>
+        <p>{contactRequest.message}</p>
+    </f:section>
 </html>
