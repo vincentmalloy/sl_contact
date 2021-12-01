@@ -1,3 +1,49 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
-    Index action
+<f:layout name="Default"/>
+<f:debug>{_all}</f:debug>
+<f:section name="form">
+    <f:form action="submit" name="contactRequest" object="{contactRequest}" id="slcontact-form">
+        <div class="flex">
+            <div class="half">
+                <f:render section="name" />
+            </div>
+            <div class="half">
+                <f:render section="email" />
+            </div>
+        </div>
+        <div class="flex">
+            <div class="full">
+                <f:render section="message" />
+            </div>
+        </div>
+        <div class="flex">
+            <div class="full">
+                <f:render section="consentGiven" />
+            </div>
+        </div>
+        <div class="flex">
+            <f:form.submit value="submit" id="slcontact-submit" />
+        </div>
+    </f:form>
+</f:section>
+
+<f:section name="name">
+    <label for="slcontact-name"><f:translate key="tx_slcontact_form.name.label" /></label>
+    <f:form.textfield property="name" id="slcontact-name" />
+</f:section>
+
+<f:section name="email">
+    <label for="slcontact-email"><f:translate key="tx_slcontact_form.email.label" /></label>
+    <f:form.textfield property="email" id="slcontact-email" type="email" />
+</f:section>
+
+<f:section name="message">
+    <label for="slcontact-message"><f:translate key="tx_slcontact_form.message.label" /></label>
+    <f:form.textarea property="message" id="slcontact-message" />
+</f:section>
+
+<f:section name="consentGiven">
+    <f:form.checkbox property="consentGiven" value="1" class="form-check-input" id="slcontact-consentgiven" />
+    <label for="slcontact-consentgiven" class="checkbox-label"><f:translate key="tx_slcontact_form.consent_given.label" /></label>
+</f:section>
 </html>
