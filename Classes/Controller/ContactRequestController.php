@@ -35,11 +35,26 @@ class ContactRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
 
     /**
      * action submit
-     *
+     * 
+     * @param ContactRequest $contactRequest
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function submitAction(): \Psr\Http\Message\ResponseInterface
+    public function submitAction(ContactRequest $contactRequest): \Psr\Http\Message\ResponseInterface
     {
+        $this->sendEmail($contactRequest);
+        $this->view->assign('contactRequest', $contactRequest);
         return $this->htmlResponse();
+    }
+
+    /**
+     * sends an email with the contact Request
+     * 
+     * @param ContactRequest $contactRequest
+     * @return void
+     */
+    public function sendEmail(ContactRequest $contactRequest)
+    {
+        //TODO: implement email
+        return;
     }
 }
