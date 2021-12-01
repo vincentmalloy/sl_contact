@@ -18,6 +18,18 @@
 			<trans-unit id="tx_slcontact_domain_model_contactrequest.consent_given" resname="tx_slcontact_domain_model_contactrequest.consent_given">
 				<source>Consent Given</source>
 			</trans-unit>
+			<trans-unit id="tx_slcontact_form.name.label" resname="tx_slcontact_form.name.label">
+				<source>Your Name</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact_form.email.label" resname="tx_slcontact_form.email.label">
+				<source>Your Email-Address</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact_form.message.label" resname="tx_slcontact_form.message.label">
+				<source>Your Message to us</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact_form.consent_given.label" resname="tx_slcontact_form.consent_given.label">
+				<source>Please confirm that you have read the Terms and Conditions</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
