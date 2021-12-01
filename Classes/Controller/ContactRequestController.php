@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace SimonLundius\SlContact\Controller;
 
+use SimonLundius\SlContact\Domain\Model\ContactRequest;
+use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
  * This file is part of the "Contact Form" Extension for TYPO3 CMS.
@@ -27,6 +29,7 @@ class ContactRequestController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionC
      */
     public function indexAction(): \Psr\Http\Message\ResponseInterface
     {
+        $this->view->assign('contactRequest', GeneralUtility::makeInstance(ContactRequest::class));
         return $this->htmlResponse();
     }
 
