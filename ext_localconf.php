@@ -10,7 +10,7 @@ defined('TYPO3') || die();
         ],
         // non-cacheable actions
         [
-            \SimonLundius\SlContact\Controller\ContactRequestController::class => ''
+            \SimonLundius\SlContact\Controller\ContactRequestController::class => 'submit'
         ]
     );
 
