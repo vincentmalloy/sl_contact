@@ -8,6 +8,11 @@
     font-weight:bold;
 }
 
+#slcontact .validationresults{
+    height:36px;
+
+}
+
 #slcontact .flex{
     display:flex;
     flex-wrap:wrap;
