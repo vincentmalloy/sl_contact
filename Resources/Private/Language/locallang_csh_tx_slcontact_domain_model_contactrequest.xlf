@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:sl_contact/Resources/Private/Language/locallang_csh_tx_slcontact_domain_model_contactrequest.xlf" date="2021-12-01T08:39:34Z" product-name="sl_contact">
+		<header/>
+		<body>
+			<trans-unit id="name.description" resname="name.description">
+				<source>name</source>
+			</trans-unit>
+			<trans-unit id="email.description" resname="email.description">
+				<source>email</source>
+			</trans-unit>
+			<trans-unit id="message.description" resname="message.description">
+				<source>message</source>
+			</trans-unit>
+			<trans-unit id="consent_given.description" resname="consent_given.description">
+				<source>consentGiven</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

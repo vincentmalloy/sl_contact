@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:sl_contact/Resources/Private/Language/locallang.xlf" date="2021-12-01T08:39:34Z" product-name="sl_contact">
+		<header/>
+		<body>
+			<trans-unit id="tx_slcontact_domain_model_contactrequest" resname="tx_slcontact_domain_model_contactrequest">
+				<source>Contact Request</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact_domain_model_contactrequest.name" resname="tx_slcontact_domain_model_contactrequest.name">
+				<source>Name</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact_domain_model_contactrequest.email" resname="tx_slcontact_domain_model_contactrequest.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact_domain_model_contactrequest.message" resname="tx_slcontact_domain_model_contactrequest.message">
+				<source>Message</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact_domain_model_contactrequest.consent_given" resname="tx_slcontact_domain_model_contactrequest.consent_given">
+				<source>Consent Given</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

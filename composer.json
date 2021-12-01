@@ -1,0 +1,47 @@
+{
+    "name": "simonlundius/sl-contact",
+    "type": "typo3-cms-extension",
+    "description": "provides a simple plugin to display a contact form",
+    "authors": [
+        {
+            "name": "Simon Lundius",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^6.9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimonLundius\\SlContact\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SimonLundius\\SlContact\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/sl-contact": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "sl_contact"
+        }
+    }
+}
