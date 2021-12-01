@@ -39,6 +39,21 @@
 			<trans-unit id="tx_slcontact_form.success.message" resname="tx_slcontact_form.success.message">
 				<source>Your Transmitted Request:</source>
 			</trans-unit>
+			<trans-unit id="tx_slcontact.validator.emailaddress.invalid" resname="tx_slcontact.validator.emailaddress.invalid">
+				<source>This does not seem to be an email address</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact.validator.name.invalid" resname="tx_slcontact.validator.name.invalid">
+				<source>Please enter your name</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact.validator.message.invalid" resname="tx_slcontact.validator.message.invalid">
+				<source>Please enter a message</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact.validator.consent_given.invalid" resname="tx_slcontact.validator.consent_given.invalid">
+				<source>We need your consent</source>
+			</trans-unit>
+			<trans-unit id="tx_slcontact.validator.empty" resname="tx_slcontact.validator.empty">
+				<source>This Field is empty</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

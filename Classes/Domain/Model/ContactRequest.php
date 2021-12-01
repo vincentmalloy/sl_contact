@@ -23,7 +23,7 @@ class ContactRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractValueObject
     /**
      * name
      *
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("SimonLundius\SlContact\Domain\Validator\NotEmptyValidator")
      * @var string
      */
     protected $name = '';
@@ -31,8 +31,8 @@ class ContactRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractValueObject
     /**
      * email
      *
-     * @TYPO3\CMS\Extbase\Annotation\Validate("EmailAddress")
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("SimonLundius\SlContact\Domain\Validator\NotEmptyValidator")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("SimonLundius\SlContact\Domain\Validator\EmailValidator")
      * @var string
      */
     protected $email = '';
@@ -40,7 +40,7 @@ class ContactRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractValueObject
     /**
      * message
      *
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
+     * @TYPO3\CMS\Extbase\Annotation\Validate("SimonLundius\SlContact\Domain\Validator\NotEmptyValidator")
      * @var string
      */
     protected $message = '';
@@ -48,7 +48,7 @@ class ContactRequest extends \TYPO3\CMS\Extbase\DomainObject\AbstractValueObject
     /**
      * consentGiven
      *
-     * @TYPO3\CMS\Extbase\Annotation\Validate("Boolean", options={"is":true})
+     * @TYPO3\CMS\Extbase\Annotation\Validate("SimonLundius\SlContact\Domain\Validator\ConsentGivenValidator")
      * @var bool
      */
     protected $consentGiven = false;
