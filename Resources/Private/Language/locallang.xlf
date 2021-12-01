@@ -33,7 +33,7 @@
 			<trans-unit id="tx_slcontact_form.contact" resname="tx_slcontact_form.contact">
 				<source>Send us a message</source>
 			</trans-unit>
-			<trans-unit id="tx_slcontact_form.success" resname="tx_slcontact_form.success">
+			<trans-unit id="tx_slcontact_form.success.headline" resname="tx_slcontact_form.success.headline">
 				<source>Success</source>
 			</trans-unit>
 			<trans-unit id="tx_slcontact_form.success.message" resname="tx_slcontact_form.success.message">
