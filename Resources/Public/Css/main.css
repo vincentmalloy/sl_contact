@@ -1,3 +1,60 @@
-h1{
+#slcontact{
+    padding:50px;
+    background-color:#5d5578;
+    font-family:sans-serif;
+}
+
+#slcontact h1{
     font-weight:bold;
+}
+
+#slcontact .flex{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding:5px;
+}
+
+#slcontact label{
+    display:inline-block;
+}
+
+#slcontact input[type=text],
+#slcontact input[type=email],
+#slcontact textarea{
+    box-sizing: border-box;
+    margin-top:10px;
+    padding:10px;
+    width:100%;
+    border-radius:10px;
+    border:none;
+}
+
+#slcontact input[type="submit"]{
+    width:100%;
+    padding:10px;
+}
+
+#slcontact .half{
+    box-sizing:border-box;
+    width:50%;
+    padding:10px;
+}
+#slcontact .full{
+    width:100%;
+    padding:10px;
+}
+
+
+@media screen and (max-width: 1199px) {
+    #slcontact{
+        padding:50px 10px 50px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #slcontact .half{
+        width:100%;
+        padding:10px;
+    }
 }
