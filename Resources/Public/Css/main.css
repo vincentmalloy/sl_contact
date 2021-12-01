@@ -8,9 +8,14 @@
     font-weight:bold;
 }
 
-#slcontact .validationresults{
-    height:36px;
+#slcontact .errors{
+    background: #b32525;
+    border-radius: 10px;
+    padding: 10px 10px 5px 30px;
+}
 
+#slcontact .validationresults{
+    min-height:45px;
 }
 
 #slcontact .flex{
@@ -36,20 +41,41 @@
 }
 
 #slcontact input[type="submit"]{
+    font-size:larger;
+    font-weight:bold;
     width:100%;
     padding:10px;
+    background-color:#c0c0c0;
+    border:none;
+    border-radius:10px;
+    box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.49);
+    position:relative;
+    transition:all 0.5s;
+}
+
+#slcontact input[type="submit"]:hover{
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.49);
+    -moz-box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.49);
+    left:-1px;
+    bottom:1px;
 }
 
 #slcontact .half{
     box-sizing:border-box;
     width:50%;
-    padding:10px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
 }
 #slcontact .full{
     width:100%;
-    padding:10px;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
 }
-
 
 @media screen and (max-width: 1199px) {
     #slcontact{

@@ -26,31 +26,31 @@
             </div>
         </div>
         <div class="flex">
-            <f:form.submit value="submit" id="slcontact-submit" />
+            <f:form.submit value="{f:translate(key:'tx_slcontact_form.submit')}" id="slcontact-submit" />
         </div>
     </f:form>
 </f:section>
 
 <f:section name="name">
     <label for="slcontact-name"><f:translate key="tx_slcontact_form.name.label" /></label>
-    <f:form.textfield property="name" id="slcontact-name" />
+    <f:form.textfield property="name" id="slcontact-name" additionalAttributes="{required:true}"/>
     <f:render partial="validationResults" arguments="{key:'name'}"/>
 </f:section>
 
 <f:section name="email">
     <label for="slcontact-email"><f:translate key="tx_slcontact_form.email.label" /></label>
-    <f:form.textfield property="email" id="slcontact-email" />
+    <f:form.textfield property="email" id="slcontact-email" additionalAttributes="{required:true}" type="email"/>
     <f:render partial="validationResults" arguments="{key:'email'}"/>
 </f:section>
 
 <f:section name="message">
     <label for="slcontact-message"><f:translate key="tx_slcontact_form.message.label" /></label>
-    <f:form.textarea property="message" id="slcontact-message" />
+    <f:form.textarea property="message" id="slcontact-message" additionalAttributes="{required:true}"/>
     <f:render partial="validationResults" arguments="{key:'message'}"/>
 </f:section>
 
 <f:section name="consentGiven">
-    <f:form.checkbox property="consentGiven" value="1" class="form-check-input" id="slcontact-consentgiven" />
+    <f:form.checkbox property="consentGiven" value="1" class="form-check-input" id="slcontact-consentgiven" additionalAttributes="{required:true}"/>
     <label for="slcontact-consentgiven" class="checkbox-label"><f:translate key="tx_slcontact_form.consent_given.label" /></label>
     <f:render partial="validationResults" arguments="{key:'consentGiven'}"/>
 </f:section>
