@@ -1,2 +1,7 @@
-txt email
-TODO: make template
+### Neue Kontaktanfrage ###
+
+Name des Kunden:            {contactRequest.name}
+Email-Adresse des Kunden:   {contactRequest.email}
+
+Nachricht des Kunden: 
+{contactRequest.message}

@@ -1,2 +1,19 @@
-html email
-<!--TODO: make template-->
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+    <body style="color:white;background-color:#5d5578;padding:50px;font-family:sans-serif;">
+        <h1 style="font-weight:bold;">Neue Kontaktanfrage</h1>
+        <table>
+            <tr>
+                <td style="padding:10px;">Name des Kunden:</td>
+                <td style="padding:10px;">{contactRequest.name}</td>
+            </tr>
+            <tr>
+                <td style="padding:10px;">Email-Addresse des Kunden:</td>
+                <td style="padding:10px;">{contactRequest.email}</td>
+            </tr>
+            <tr>
+                <td style="padding:10px;">Nachricht des Kunden:</td>
+                <td style="padding:10px;">{contactRequest.message}</td>
+            </tr>
+        </table>
+    </body>
+</html>
